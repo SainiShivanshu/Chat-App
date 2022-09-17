@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+
+    tools:context=".activity.NumberActivity">
+
+    <ImageView
+        app:srcCompat="@drawable/ic_otp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        />
+
+    <TextView
+
+        android:text="Verify Number"
+        android:textAlignment="center"
+
+        android:textColor="#036007"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="#656262"
+        android:text="Please enter OTP to verify it"/>
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/otp"
+                android:hint="Enter OTP"
+                android:background="@drawable/background_shape"
+                android:padding="10dp"
+                android:ems="1"
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:textStyle="bold|normal"
+                android:textColor="#1C1C1C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:text="Continue"
+                android:textStyle="bold|normal"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#228C27"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
