@@ -59,10 +59,6 @@ binding.continueBtn.setOnClickListener {
     else UploadData()
 }
 
-
-
-
-
     }
 
     private fun UploadData() {

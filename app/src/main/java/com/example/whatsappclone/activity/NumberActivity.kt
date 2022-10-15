@@ -15,7 +15,7 @@ private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_number)
+
 binding=ActivityNumberBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

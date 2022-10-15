@@ -23,19 +23,23 @@ class SplashActivity : AppCompatActivity() {
     var handler = Handler()
     var textView: TextView? = null
     var binding:ActivitySplashBinding?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
         supportActionBar?.hide()
+
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         YoYo.with(Techniques.ZoomIn).duration(500).repeat(0).playOn(binding!!.imageView)
-        @Suppress("DEPRECATION")
+
+       @Suppress("DEPRECATION")
+
         Handler().postDelayed({
-            startActivity(
+             startActivity(
                 Intent(
                     this@SplashActivity,
                     MainActivity::class.java

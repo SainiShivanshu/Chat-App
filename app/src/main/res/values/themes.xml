@@ -28,4 +28,13 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.WhatsappClone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.WhatsappClone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="menu_icon" parent ="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="color">@color/white</item>
+
+    </style>
+
 </resources>

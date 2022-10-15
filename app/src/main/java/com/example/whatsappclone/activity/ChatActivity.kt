@@ -101,7 +101,7 @@ val message=MessageModel(binding.messageBox.text.toString(),senderUid,Date().tim
                     list.add(data!!)
                 }
 
-                binding.recyclerView.adapter = MessageAdapter(this@ChatActivity,list,)
+                binding.recyclerView.adapter = MessageAdapter(this@ChatActivity,list,senderRoom,receiverRoom)
 
             }
 
