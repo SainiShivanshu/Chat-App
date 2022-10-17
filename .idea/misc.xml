@@ -3,39 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/background_shape.xml" value="0.1155" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/circle_bg.xml" value="0.2" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/ic_attachment.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/ic_backspac.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/ic_camera.xml" value="0.126" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/ic_otp.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/menu.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/receiver_drawable.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/drawable/sent_drawable.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_about_us.xml" value="0.24895833333333334" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_chat.xml" value="0.264" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_main2.xml" value="0.25" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_number.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_otpactivity.xml" value="0.2" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_profile.xml" value="0.23854166666666668" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/activity_splash.xml" value="0.264" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/app_bar_main.xml" value="0.12107396149949341" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/chat_user_item_layout.xml" value="0.12685185185185185" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/content_main.xml" value="0.25" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/delete_layout.xml" value="0.24666666666666667" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/fragment_call.xml" value="0.176" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/fragment_chat.xml" value="0.24739583333333334" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/fragment_chat2.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/fragment_chat3.xml" value="0.1" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/fragment_slideshow.xml" value="0.25" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/fragment_status.xml" value="0.21944444444444444" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/receiver_layout_item.xml" value="0.2" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/layout/sent_item_layout.xml" value="0.264" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/menu/activity_main2_drawer.xml" value="0.25" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/menu/main2.xml" value="0.25" />
-        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/WhatsappClone/app/src/main/res/menu/menu.xml" value="0.264" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/background_shape.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/bottom_shape.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/ic_attachment.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/ic_send.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/receive_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/received_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/received_msg.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/send_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/send_msg.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_chat.xml" value="0.2" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_o_t_p.xml" value="0.264" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_setup_profile.xml" value="0.1" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_verification.xml" value="0.264" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/delete_layout.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/item_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/received_msg.xml" value="0.24791666666666667" />
+        <entry key="..\:/Users/shivanshu/AndroidStudioProjects/ChatApp/app/src/main/res/layout/send_msg.xml" value="0.24791666666666667" />
       </map>
     </option>
   </component>

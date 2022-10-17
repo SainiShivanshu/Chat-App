@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "Whatsapp Clone"
+rootProject.name = "Chat App"
 include ':app'
