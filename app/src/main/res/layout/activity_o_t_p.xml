@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:padding="10dp"
+    tools:context=".OTPActivity">
+
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:src="@drawable/getotp"
+    android:scaleType="centerCrop"
+
+    />
+    <TextView
+        android:id="@+id/phoneLble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify +912003154789"
+        android:textColor="#088797"
+        android:textAlignment="center"
+        android:textStyle="bold|normal"
+        android:textSize="25sp"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter OTP"
+    android:textAlignment="center"
+    android:textSize="17sp"
+    android:textColor="#088797"
+    android:textStyle="normal"
+
+    />
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <com.noobcode.otpview.OTPView
+                android:id="@+id/otp_view"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+          android:inputType="number"
+              android:layout_gravity="center"
+                android:focusableInTouchMode="true"
+
+                android:textColor="#629FD1"
+                app:borderThickness="3"
+
+                app:otpLength="6"
+                app:spaceBetween="25" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/continueBtn"
+                android:text="Continue"
+                android:paddingTop="5dp"
+                android:textStyle="bold|normal"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#56AACF"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
