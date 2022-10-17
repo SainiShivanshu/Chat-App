@@ -58,7 +58,6 @@ userList= ArrayList()
          })
 
 
-
         return binding.root
     }
 

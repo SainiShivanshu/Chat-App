@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import com.example.whatsappclone.activity.AboutUs
 import com.example.whatsappclone.activity.NumberActivity
 import com.example.whatsappclone.activity.OTPActivity
+import com.example.whatsappclone.activity.ProfileUpdateActivity
 import com.example.whatsappclone.adapter.ViewPagerAdapter
 import com.example.whatsappclone.databinding.ActivityMainBinding
 import com.example.whatsappclone.ui.CallFragment
@@ -79,32 +80,33 @@ class MainActivity : AppCompatActivity() {
 
         menuInflater.inflate(R.menu.menu,menu)
 
-//        for(int i = 0; i < menu.size(); i++)  {
-//        val drawable = menu!!.getItem(0).icon
-//        if (drawable != null) {
-//            drawable.mutate()
-//            drawable.setColorFilter(
-//                resources.getColor(R.color.white),
-//                PorterDuff.Mode.SRC_ATOP
-//            )
-//        } }
-//        val yourdrawable = menu!!.getItem(1).icon // change 0 with 1,2 ...
-//
-//        yourdrawable.mutate()
-//        yourdrawable.setColorFilter(resources.getColor(R.color.white), PorterDuff.Mode.SRC_IN)
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.profile-> Toast.makeText(this,"Profile Clicked",Toast.LENGTH_LONG).show()
+            R.id.profile-> {
+
+                var intent =Intent(this, ProfileUpdateActivity::class.java)
+
+                startActivity(intent)
+            }
             R.id.About-> {
 
                 var intent =Intent(this, AboutUs::class.java)
 
                 startActivity(intent)
             }
-            R.id.logout->Toast.makeText(this,"logout Clicked",Toast.LENGTH_LONG).show()
+            R.id.logout-> {
+                val user = FirebaseAuth.getInstance()
+                user.signOut()
+
+                var intent =Intent(this, NumberActivity::class.java)
+
+                startActivity(intent)
+                finish()
+
+            }
         }
         return super.onOptionsItemSelected(item)
     }

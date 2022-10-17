@@ -6,6 +6,7 @@ import android.content.DialogInterface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.whatsappclone.R
 import com.example.whatsappclone.databinding.DeleteLayoutBinding
@@ -13,7 +14,10 @@ import com.example.whatsappclone.databinding.ReceiverLayoutItemBinding
 import com.example.whatsappclone.databinding.SentItemLayoutBinding
 import com.example.whatsappclone.model.MessageModel
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class MessageAdapter(var context: Context,var list: ArrayList<MessageModel>,  senderRoom:String,
                      receiverRoom:String):RecyclerView.Adapter<RecyclerView.ViewHolder> (){
@@ -45,77 +49,91 @@ return if(FirebaseAuth.getInstance().uid == list[position].senderId) ITEM_SENT e
             val viewHolder = holder as SentViewHolder
             viewHolder.binding.userMsg.text = message.message
 
-
-
-
         }
 
 
 
 
-//            viewHolder.itemView.setOnClickListener{
-//
-//                val view = LayoutInflater.from(context).inflate(R.layout.delete_layout,null)
-//                val binding: DeleteLayoutBinding = DeleteLayoutBinding.bind(view)
-//
-//                val dialog  = AlertDialog.Builder(context)
-//                    .setTitle("Delete Message")
-//                    .setView(binding.root)
-//                    .create()
-//
-//                binding.everyone.setOnClickListener {
-//                    message.message="This message is deleted"
-//                    message.message?.let{it1->
-//                        FirebaseDatabase.getInstance().reference.child("chats")
-//                            .child(senderRoom)
-//                            .child("message")
-//                            .child(it1).setValue(null).addOnSuccessListener {
-//                               viewHolder.binding.userMsg.text = ""
-//
-//                            }
-//                    }
-//                    message.message.let {
-//                            it1->
-//
-//                        FirebaseDatabase.getInstance().reference.child("chats")
-//                            .child(receiverRoom)
-//                            .child("message")
-//                            .child(it1!!).removeValue()
-//
-//                    }
-//
-//                    dialog.dismiss()
-//
-//
-//                }
-//
-//
-//                binding.delete.setOnClickListener {
-//                    message.message.let {
-//                            it1->
-//                        FirebaseDatabase.getInstance().reference.child("chats")
-//                            .child(senderRoom)
-//                            .child("message")
-//                            .child(it1!!).setValue(null)
-//                    }
-//
-//
-//
-//                    dialog.dismiss()
-//                }
-//
-//                binding.cancel.setOnClickListener { dialog.dismiss() }
-//                dialog.show()
-//
-//                false
-//            }
+            holder.itemView.setOnClickListener{
+
+                val view = LayoutInflater.from(context).inflate(R.layout.delete_layout,null)
+                val binding: DeleteLayoutBinding = DeleteLayoutBinding.bind(view)
+
+                val dialog  = AlertDialog.Builder(context)
+                    .setTitle("Delete Message")
+                    .setView(binding.root)
+                    .create()
+
+                holder.itemView.setOnClickListener{
+
+                    val view = LayoutInflater.from(context).inflate(R.layout.delete_layout,null)
+                    val binding:DeleteLayoutBinding= DeleteLayoutBinding.bind(view)
+
+                    val dialog  = AlertDialog.Builder(context)
+                        .setTitle("Delete Message")
+                        .setView(binding.root)
+                        .create()
+
+                    binding.everyone.setOnClickListener {
+
+                        FirebaseDatabase.getInstance().reference.child("chats")
+                                .child(senderRoom)
+                                .child("message")
+                                .child(message.messageId.toString()).removeValue()
+                            .addOnSuccessListener {
+                                Toast.makeText(context,"Meassage deleted",Toast.LENGTH_SHORT).show()
+                            }
+                            .addOnFailureListener {
+                                Toast.makeText(context,"Failed",Toast.LENGTH_SHORT).show()
+
+                            }
+                        dialog.dismiss()
+
+
+                    }
+
+
+                       message.message.let {
+                            it1->
+
+                        FirebaseDatabase.getInstance().reference.child("chats")
+                            .child(receiverRoom)
+                            .child("message")
+                            .child(it1!!).removeValue()
+
+                        }
+
+                       dialog.dismiss()
+
+                }
+
+
+                binding.delete.setOnClickListener {
+                    message.message.let {
+                            it1->
+                        FirebaseDatabase.getInstance().reference.child("chats")
+                            .child(senderRoom)
+                            .child("message")
+                            .child(it1!!).setValue(null)
+                    }
+
+
+
+                    dialog.dismiss()
+                }
+
+                binding.cancel.setOnClickListener { dialog.dismiss() }
+                dialog.show()
+
+                false
+            }
+        }
+
+//        else{
+//            val viewHolder = holder as ReceiverViewHolder
+//            viewHolder.binding.userMsg.text = message.message
 //        }
 
-        else{
-            val viewHolder = holder as ReceiverViewHolder
-            viewHolder.binding.userMsg.text = message.message
-        }
-    }
 
     override fun getItemCount(): Int {
         return list.size

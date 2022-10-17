@@ -46,6 +46,7 @@ dialog.show()
                 }
 
                 override fun onVerificationFailed(p0: FirebaseException) {
+
                     dialog.dismiss()
                    Toast.makeText(this@OTPActivity,"Please try again",Toast.LENGTH_SHORT).show()
 

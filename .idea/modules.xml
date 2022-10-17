@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Chat_App.iml" filepath="$PROJECT_DIR$/.idea/modules/Chat_App.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chat_App.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chat_App.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chat_App.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chat_App.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chat_App.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chat_App.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chat_App.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chat_App.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Whatsapp_Clone.iml" filepath="$PROJECT_DIR$/.idea/modules/Whatsapp_Clone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Whatsapp_Clone.app.unitTest.iml" />
     </modules>
   </component>
 </project>

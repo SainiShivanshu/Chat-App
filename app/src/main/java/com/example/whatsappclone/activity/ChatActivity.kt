@@ -2,11 +2,10 @@ package com.example.whatsappclone.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
-import android.os.OutcomeReceiver
+
 import android.widget.Toast
 import com.bumptech.glide.Glide
-import com.example.whatsappclone.R
+
 import com.example.whatsappclone.adapter.MessageAdapter
 import com.example.whatsappclone.databinding.ActivityChatBinding
 import com.example.whatsappclone.model.MessageModel
@@ -62,10 +61,10 @@ senderRoom = senderUid+receiverUid    // sender message dekhe toh receiver vale 
                 Toast.makeText(this,"Please enter your message",Toast.LENGTH_SHORT).show()
 
             }
-          else{
-val message=MessageModel(binding.messageBox.text.toString(),senderUid,Date().time)
+          else{ val randomKey = database.reference.push().key
+val message=MessageModel(randomKey,binding.messageBox.text.toString(),senderUid,Date().time)
                 // unique key for storing data
-                val randomKey = database.reference.push().key
+
 
                 database.reference.child("chats")
                     .child(senderRoom).child("message").child(randomKey!!)
@@ -76,8 +75,6 @@ val message=MessageModel(binding.messageBox.text.toString(),senderUid,Date().tim
 
                                 binding.messageBox.text=null
                                 Toast.makeText(this,"Message sent!!", Toast.LENGTH_SHORT).show()
-
-
 
 
                             }
